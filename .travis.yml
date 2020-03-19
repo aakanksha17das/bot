@@ -21,7 +21,8 @@ deploy:
    username: aakandas@in.ibm.com  
    password: 17-aakankshadas-17
    organization: aakandas   
-   space: aak   
+   space: aak  
+   manifest: manifest.yml 
    app_name: bot             
    region: us-south                      #  Defaults to US South region (ng).
    api: https://cloud.ibm.com   # (optional)  Overrides region setting if specified for Bluemix local installations.
