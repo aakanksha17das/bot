@@ -1,0 +1,27 @@
+language: python
+python: 
+  - "3.4"
+  - "3.5"
+  - "3.6"      
+  - "3.7"
+  - "3.8"
+  - "nightly" 
+
+install:
+  - pip3 install pipenv
+  - pipenv install 
+
+script:
+  - python3 status.py
+
+
+deploy:
+   edge: true
+   provider: bluemixcloudfoundry
+   username: aakandas@in.ibm.com  
+   password: 17-aakankshadas-17
+   organization: aakandas   
+   space: aak   
+   app_name: bot             
+   region: us-south                      #  Defaults to US South region (ng).
+   api: https://cloud.ibm.com   # (optional)  Overrides region setting if specified for Bluemix local installations.
