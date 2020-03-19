@@ -5,5 +5,5 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: bot
-  host: bot-aakanksha-bot
+  host: aakankshadas
   disk_quota: 1024M
