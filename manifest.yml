@@ -1,5 +1,9 @@
 ---
 applications:
- - name: bot
-   random-route: true
-   memory: 128M
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: bot
+  host: bot-aakanksha-bot
+  disk_quota: 1024M
